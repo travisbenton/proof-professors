@@ -1,6 +1,6 @@
 ---
-title: This is a title and it's really big
-subtitle: ...and here's a subtitle
+title: We're here to help you achieve your goals
+subtitle: Explore to see all our offerings!
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Proof Professors?
@@ -14,6 +14,6 @@ products:
   - image: /img/illustrations-woman.svg
     text: We also offer at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
 values:
-  heading: Our values
+  heading: Testimonials
   text: Our values can be seen through what others are saying at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
 ---

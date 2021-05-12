@@ -2,16 +2,10 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
-<div class="mw7 center ph3 pt4">
-
-  {{ range $index, $element := .Params.values }}
-    {{ if modBool $index 2 }}
-      {{ partial "media-block" $element }}
-    {{ else }}
-      {{ partial "media-block-reverse" $element }}
-    {{ end }}
+<div class="pb4 pt4">
+  {{ range .Params.testimonials }}
+    {{ partial "blockquote" . }}
   {{ end }}
-
 </div>
 
 {{ end }}
