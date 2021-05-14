@@ -10,6 +10,10 @@
   box-shadow: none !important;
 }
 
+.nav-mobile .fake-link {
+  display: none !important;
+}
+
 .nav-mobile .child {
   display: block !important;
   opacity: 1 !important;
