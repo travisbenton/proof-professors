@@ -1,0 +1,21 @@
+.nav-mobile {
+  display: block !important;
+  position: absolute !important;
+  top: 59px;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-mobile a {
+  box-shadow: none !important;
+}
+
+.nav-mobile .child {
+  display: block !important;
+  opacity: 1 !important;
+  padding: var(--spacing-medium) !important;
+}
+
+.nav-mobile ul {
+  position: relative !important;
+}

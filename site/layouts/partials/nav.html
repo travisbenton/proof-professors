@@ -1,18 +1,33 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+<nav id="nav" class="flex justify-between items-center center bg-white divider-grey relative">
 
 	<!-- Logo -->
-	<a href="/" class="pa2 db mr4 h-100 w4 flex-none">
+	<a href="/" class="pa2 db mr2 h-100 w4 flex-none">
 		<img src="/img/logo.png" alt="Proof Professors" class="br0 db mb0 w-100"/>
 	</a>
 
 	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
+	<ul id="menu" class="bg-white flex-m b grey-3 dn dn-m f6-ns">
 		<li><a href="/" class="pa3 no-underline db">Home</a></li>
-		<li><a href="/services" class="pa3 no-underline db">Services</a></li>
+		<li class="hide-child">
+			<span class="fake-link pa3 no-underline db arrow">Services</span>
+			<ul class="absolute z-1">
+				<li class="child bg-white pl3 pr3 pt2 pb2">
+					<a href="/resume" class="pt2 pb2 no-box-shadow no-underline">Resume + Cover Letter</a>
+				</li>
+				<li class="child bg-white pl3 pr3 pt2 pb2">
+					<a href="/personal-statement" class="pt2 pb2 no-box-shadow no-underline">Personal Statements</a>
+				</li>
+				<li class="child bg-white pl3 pr3 pt2 pb2">
+					<a href="/professional-writing" class="pt2 pb2 no-box-shadow no-underline">Professional Writing</a>
+				</li>
+			</ul>
+		</li>
 		<li><a href="/about" class="pa3 no-underline db">About</a></li>
 		<li><a href="/values" class="pa3 no-underline db">Testimonials</a></li>
 		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
 		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
 	</ul>
 
+	<!-- Mobile touch -->
+	<button id="menu-btn" class="dn-m mr3">MENU</button>
 </nav>

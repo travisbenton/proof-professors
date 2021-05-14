@@ -36,6 +36,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   text-decoration: underline;
 }
 
+.arrow:hover {
+  cursor: default;
+}
+
 .pointer:hover {
   cursor: pointer;
 }

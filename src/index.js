@@ -2,5 +2,8 @@
 
 import "./css/main.css";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+const menuBtnEl = document.getElementById('menu-btn')
+const menuEl = document.getElementById('menu')
+const navEl = document.getElementById('nav')
+
+menuBtnEl.onclick = () => menuEl.classList.toggle('nav-mobile')
