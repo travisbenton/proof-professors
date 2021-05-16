@@ -1,6 +1,6 @@
 ---
 title: "Testimonials"
-image: /img/about-jumbotron.jpg
+image: /img/testimonials-jumbotron.jpg
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: >-
