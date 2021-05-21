@@ -58,9 +58,9 @@ collections: # A list of collections the CMS should be able to edit
               - label: Text
                 name: text
                 widget: text
-      - file: "site/content/services/_index.md"
-        label: "Services Page"
-        name: "products"
+      - file: "site/content/our-process/_index.md"
+        label: "Our Process Page"
+        name: "our-products"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
@@ -89,10 +89,6 @@ collections: # A list of collections the CMS should be able to edit
                   {label: Alt, name: alt, widget: string}
                 ]}
               ]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [
-              {label: Quote, name: quote, widget: string},
-              {label: Author, name: author, widget: string}
-            ]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [
               {label: Heading, name: heading, widget: string},
@@ -104,9 +100,35 @@ collections: # A list of collections the CMS should be able to edit
                 {label: Items, name: items, widget: list}
               ]}
             ]}
-      - file: "site/content/values/_index.md"
-        label: "Values Page"
-        name: "values"
+      - file: "site/content/personal-statement/_index.md"
+        label: "Personal Statement Page"
+        name: "personal-statement"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+      - file: "site/content/professional-writing/_index.md"
+        label: "Professional Writing Page"
+        name: "professional-writing"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+      - file: "site/content/testimonials/_index.md"
+        label: "Testimonials Page"
+        name: "testimonials"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [
+              {label: Quote, name: quote, widget: string},
+              {label: Author, name: author, widget: string}
+            ]}
+      - file: "site/content/our-process/_index.md"
+        label: "Our Process Page"
+        name: "our-process"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
