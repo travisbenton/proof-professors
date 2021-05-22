@@ -18,7 +18,7 @@ const MediaBlock = ({heading, text, imageUrl, reverse}) => {
 
 export default class ProfessionalWritingPreview extends React.Component {
   render() {
-    const {entry, getAsset} = this.props;
+    const { entry, getAsset, widgetFor } = this.props;
 
     return <div>
       <Jumbotron image={getAsset(entry.getIn(["data", "image"]))} title={entry.getIn(["data", "title"])} />
