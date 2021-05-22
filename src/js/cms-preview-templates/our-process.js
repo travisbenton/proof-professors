@@ -58,8 +58,8 @@ export default class PostPreview extends React.Component {
               		<span className="f4">$</span>{plan.get('price')}
               	</p>
 
--              	<p className="b">{plan.get('description')}</p>
-
+-              	<p className="mw-100">{plan.get('description')}</p>
+                <h2 class="f2 b lh-title mb3">{plan.get('heading')}</h2>
               	<ul>
                   {(plan.get('items') || []).map((item, index) => <li key={index}>
                     <p className={index + 1 !== plan.get('items').size ? "pb2 mb2 divider-grey" : null}>{item}</p>

@@ -37,7 +37,7 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Image", name: "image", widget: "image"},
               {label: "Text", name: "text", widget: "text"}
             ]}
-          - {label: "Testimonials", name: "Testimonials", widget: "object", fields: [
+          - {label: "Testimonials", name: testimonials, widget: "object", fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}
             ]}
@@ -46,7 +46,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "contact"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Logo, name: logo, widget: image}
           - {label: Body, name: body, widget: markdown}
           - label: Contact Entries
             name: contact_entries
@@ -60,12 +59,10 @@ collections: # A list of collections the CMS should be able to edit
                 widget: text
       - file: "site/content/our-process/_index.md"
         label: "Our Process Page"
-        name: "our-products"
+        name: "our-process"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [
               {label: Heading, name: heading, widget: string},
               {label: Description, name: description, widget: text},
@@ -74,21 +71,6 @@ collections: # A list of collections the CMS should be able to edit
                 {label: Text, name: text, widget: text}
               ]}
             ]}
-          - {label: Main, name: main, widget: object, fields: [
-              {label: Heading, name: heading, widget: string},
-              {label: Description, name: description, widget: text},
-              {label: Image1, name: image1, widget: object, fields: [
-                {label: Image, name: image, widget: image},
-                {label: Alt, name: alt, widget: string}
-              ]},
-              {label: Image2, name: image2, widget: object, fields: [
-                {label: Image, name: image, widget: image},
-                {label: Alt, name: alt, widget: string}]},
-                {label: Image3, name: image3, widget: object, fields: [
-                  {label: Image, name: image, widget: image},
-                  {label: Alt, name: alt, widget: string}
-                ]}
-              ]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [
               {label: Heading, name: heading, widget: string},
@@ -106,16 +88,14 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "site/content/professional-writing/_index.md"
         label: "Professional Writing Page"
         name: "professional-writing"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "site/content/testimonials/_index.md"
         label: "Testimonials Page"
         name: "testimonials"
@@ -126,16 +106,3 @@ collections: # A list of collections the CMS should be able to edit
               {label: Quote, name: quote, widget: string},
               {label: Author, name: author, widget: string}
             ]}
-      - file: "site/content/our-process/_index.md"
-        label: "Our Process Page"
-        name: "our-process"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - label: Values
-            name: values
-            widget: list
-            fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}
