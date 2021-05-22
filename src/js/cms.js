@@ -8,7 +8,7 @@ import HomePreview from "./cms-preview-templates/home";
 import PostPreview from "./cms-preview-templates/post";
 import ProductsPreview from "./cms-preview-templates/services";
 import PersonalStatements from "./cms-preview-templates/personal-statements";
-import ProfessionalWriting from "./cms-preview-templates/services";
+import ProfessionalWriting from "./cms-preview-templates/professional-writing";
 import TestimonialsPreview from "./cms-preview-templates/testimonials";
 import AboutPreview from "./cms-preview-templates/about";
 import ContactPreview from "./cms-preview-templates/contact";
