@@ -83,21 +83,21 @@ collections: # A list of collections the CMS should be able to edit
                 {label: Items, name: items, widget: list}
               ]}
             ]}
-      - file: "site/content/personal-statement/_index.md"
-        label: "Personal Statement Page"
-        name: "personal-statement"
+      - file: "site/content/personal-statements/_index.md"
+        label: "Personal Statements Page"
+        name: "personal-statements"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "site/content/about/_index.md"
-        label: "about"
+        label: "About"
         name: "about"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - label: Values
-            name: values
+          - label: About
+            name: about
             widget: list
             fields:
               - {label: Heading, name: heading, widget: string}
